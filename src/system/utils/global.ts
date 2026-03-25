@@ -1,5 +1,6 @@
 import { invokeMigration } from './migration';
 import * as macros from './macros';
+import AdvancementManager from './advancement';
 
 /**
  * Global utility functions, exposed to users via
@@ -9,4 +10,5 @@ import * as macros from './macros';
 export default {
     invokeMigration,
     macros,
+    AdvancementManager,
 };

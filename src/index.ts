@@ -95,6 +95,9 @@ Hooks.once('init', async () => {
     // Register item event system event types & handlers
     registerItemEventSystem();
 
+    // Initialize advancement manager
+    CosmereUtils.AdvancementManager.init();
+
     // Configure the starter rules
     registerStarterRulesConfig();
 

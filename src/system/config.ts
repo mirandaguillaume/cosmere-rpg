@@ -461,7 +461,7 @@ const COSMERE: CosmereRPGConfig = {
             {
                 level: 1,
                 tier: 1,
-                fields: {
+                grants: {
                     attributePoints: 12,
                     health: 10,
                     healthIncludeStrength: true,
@@ -480,7 +480,7 @@ const COSMERE: CosmereRPGConfig = {
             {
                 level: 2,
                 tier: 1,
-                fields: {
+                grants: {
                     health: 5,
                     skillRanks: 2,
                     talents: 1,
@@ -497,7 +497,7 @@ const COSMERE: CosmereRPGConfig = {
             {
                 level: 3,
                 tier: 1,
-                fields: {
+                grants: {
                     attributePoints: 1,
                     health: 5,
                     skillRanks: 2,
@@ -515,7 +515,7 @@ const COSMERE: CosmereRPGConfig = {
             {
                 level: 4,
                 tier: 1,
-                fields: {
+                grants: {
                     health: 5,
                     skillRanks: 2,
                     talents: 1,
@@ -532,7 +532,7 @@ const COSMERE: CosmereRPGConfig = {
             {
                 level: 5,
                 tier: 1,
-                fields: {
+                grants: {
                     health: 5,
                     skillRanks: 2,
                     talents: 1,
@@ -549,7 +549,7 @@ const COSMERE: CosmereRPGConfig = {
             {
                 level: 6,
                 tier: 2,
-                fields: {
+                grants: {
                     attributePoints: 1,
                     health: 4,
                     healthIncludeStrength: true,
@@ -568,7 +568,7 @@ const COSMERE: CosmereRPGConfig = {
             {
                 level: 7,
                 tier: 2,
-                fields: {
+                grants: {
                     health: 4,
                     skillRanks: 2,
                     talents: 1,
@@ -585,7 +585,7 @@ const COSMERE: CosmereRPGConfig = {
             {
                 level: 8,
                 tier: 2,
-                fields: {
+                grants: {
                     health: 4,
                     skillRanks: 2,
                     talents: 1,
@@ -602,7 +602,7 @@ const COSMERE: CosmereRPGConfig = {
             {
                 level: 9,
                 tier: 2,
-                fields: {
+                grants: {
                     attributePoints: 1,
                     health: 4,
                     skillRanks: 2,
@@ -620,7 +620,7 @@ const COSMERE: CosmereRPGConfig = {
             {
                 level: 10,
                 tier: 2,
-                fields: {
+                grants: {
                     health: 4,
                     skillRanks: 2,
                     talents: 1,
@@ -637,7 +637,7 @@ const COSMERE: CosmereRPGConfig = {
             {
                 level: 11,
                 tier: 3,
-                fields: {
+                grants: {
                     health: 3,
                     healthIncludeStrength: true,
                     skillRanks: 2,
@@ -655,7 +655,7 @@ const COSMERE: CosmereRPGConfig = {
             {
                 level: 12,
                 tier: 3,
-                fields: {
+                grants: {
                     attributePoints: 1,
                     health: 3,
                     skillRanks: 2,
@@ -673,7 +673,7 @@ const COSMERE: CosmereRPGConfig = {
             {
                 level: 13,
                 tier: 3,
-                fields: {
+                grants: {
                     health: 3,
                     skillRanks: 2,
                     talents: 1,
@@ -690,7 +690,7 @@ const COSMERE: CosmereRPGConfig = {
             {
                 level: 14,
                 tier: 3,
-                fields: {
+                grants: {
                     health: 3,
                     skillRanks: 2,
                     talents: 1,
@@ -707,7 +707,7 @@ const COSMERE: CosmereRPGConfig = {
             {
                 level: 15,
                 tier: 3,
-                fields: {
+                grants: {
                     attributePoints: 1,
                     health: 3,
                     skillRanks: 2,
@@ -725,7 +725,7 @@ const COSMERE: CosmereRPGConfig = {
             {
                 level: 16,
                 tier: 4,
-                fields: {
+                grants: {
                     health: 2,
                     healthIncludeStrength: true,
                     skillRanks: 2,
@@ -743,7 +743,7 @@ const COSMERE: CosmereRPGConfig = {
             {
                 level: 17,
                 tier: 4,
-                fields: {
+                grants: {
                     health: 2,
                     skillRanks: 2,
                     talents: 1,
@@ -760,7 +760,7 @@ const COSMERE: CosmereRPGConfig = {
             {
                 level: 18,
                 tier: 4,
-                fields: {
+                grants: {
                     attributePoints: 1,
                     health: 2,
                     skillRanks: 2,
@@ -778,7 +778,7 @@ const COSMERE: CosmereRPGConfig = {
             {
                 level: 19,
                 tier: 4,
-                fields: {
+                grants: {
                     health: 2,
                     skillRanks: 2,
                     talents: 1,
@@ -795,7 +795,7 @@ const COSMERE: CosmereRPGConfig = {
             {
                 level: 20,
                 tier: 4,
-                fields: {
+                grants: {
                     health: 2,
                     skillRanks: 2,
                     talents: 1,
@@ -812,7 +812,7 @@ const COSMERE: CosmereRPGConfig = {
             {
                 level: 21,
                 tier: 5,
-                fields: {
+                grants: {
                     health: 1,
                     skillRanksOrTalents: 1,
                 },

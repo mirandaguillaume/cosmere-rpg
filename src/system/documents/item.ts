@@ -113,10 +113,6 @@ import {
 import { SYSTEM_ID } from '@system/constants';
 import { HOOKS } from '@system/constants/hooks';
 import { ItemOrigin } from '@system/types/item';
-import {
-    OverridesAdvancementDataSchema,
-    OverridesAdvancementDerivedData,
-} from '../data/item/mixins/overrides-advancement';
 
 interface ShowConsumeDialogOptions {
     /**
@@ -325,13 +321,6 @@ export class CosmereItem<
      */
     public hasRelationships(): this is RelationshipsItem {
         return 'relationships' in this.system;
-    }
-
-    /**
-     * Whether or not this item can innately override character advancement.
-     */
-    public hasAdvancementOverrides(): this is AdvancementItem {
-        return 'advancement' in this.system;
     }
 
     /* --- Accessors --- */
@@ -1765,11 +1754,6 @@ export type LinkedSkillsItem =
     CosmereItemFromSchema<LinkedSkillsItemDataSchema>;
 export type RelationshipsItem =
     CosmereItemFromSchema<RelationshipsItemDataSchema>;
-export type AdvancementItem = CosmereItemFromSchema<
-    OverridesAdvancementDataSchema,
-    EmptyObject,
-    OverridesAdvancementDerivedData
->;
 
 declare module '@league-of-foundry-developers/foundry-vtt-types/configuration' {
     interface ConfiguredItem<SubType extends Item.SubType> {

@@ -50,13 +50,11 @@ import { getTargetDescriptors } from '../utils/generic';
 import { EnricherData } from '../utils/enrichers';
 import { characterMeetsTalentPrerequisites } from '@system/utils/talent-tree';
 import { containsExpertise } from '@system/utils/actor';
-import AdvancementManager from '@system/utils/advancement';
 
 // Constants
 import { SYSTEM_ID } from '@system/constants';
 import { HOOKS } from '@system/constants/hooks';
 import { AnyObject } from '@league-of-foundry-developers/foundry-vtt-types/utils';
-import { MaxStatFieldKey } from '../types/advancement';
 
 export type CharacterActor = CosmereActor<ActorType.Character>;
 export type AdversaryActor = CosmereActor<ActorType.Adversary>;

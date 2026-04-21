@@ -3,9 +3,9 @@
     .active-effect-config,
     .journal-sheet,
     .roll-table-sheet,
-    .token-config) {    
+    .token-config) {
     --minimized-width: 250px;
-        
+
     border: 3px solid var(--cosmere-color-accent);
     border-radius: 0;
 
@@ -114,7 +114,7 @@
                 }
             }
         }
-    }    
+    }
 
     .collapsible {
         .collapsible-content {
@@ -125,8 +125,8 @@
             & > .wrapper {
                 overflow: hidden;
             }
-        } 
-        
+        }
+
         &.expanded .collapsible-content{
             grid-template-rows: 1fr;
         }

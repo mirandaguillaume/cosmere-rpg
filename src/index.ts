@@ -4,7 +4,7 @@ import { SYSTEM_ID } from './system/constants';
 import { TEMPLATES } from './system/utils/templates';
 import COSMERE from './system/config';
 
-import './style.scss';
+import './style.css';
 import './system/mixins';
 
 import {

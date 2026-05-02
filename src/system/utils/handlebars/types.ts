@@ -100,3 +100,9 @@ export interface ItemContext {
         typeLabel: string;
     }>;
 }
+
+export interface OverrideSelectOption {
+    value: string;
+    label: string;
+    tooltip?: string;
+}

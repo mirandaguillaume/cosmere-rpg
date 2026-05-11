@@ -1470,6 +1470,9 @@
                             "Description": "Maximum ranks per Skill"
                         }
                     }
+                },
+                "Error": {
+                    "BadConfig": "Invalid override configuration: {error}"
                 }
             }
         }

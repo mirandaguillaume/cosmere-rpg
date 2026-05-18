@@ -54,6 +54,14 @@ export class BaseActorSheet<
 ) {
     declare actor: CosmereActor;
 
+    get title(): string {
+        const type = game.i18n.localize(`TYPES.Actor.${this.actor.type}`);
+        return game.i18n.format('COSMERE.Actor.Sheet.TitleFormat', {
+            name: this.actor.name,
+            type,
+        });
+    }
+
     /* eslint-disable @typescript-eslint/unbound-method */
     static DEFAULT_OPTIONS = {
         actions: {

@@ -41,6 +41,14 @@ export class BaseItemSheet extends TabsApplicationMixin(
 ) {
     declare item: CosmereItem;
 
+    get title(): string {
+        const type = game.i18n.localize(`TYPES.Item.${this.item.type}`);
+        return game.i18n.format('COSMERE.Item.Sheet.TitleFormat', {
+            name: this.item.name,
+            type,
+        });
+    }
+
     /**
      * NOTE: Unbound methods is the standard for defining actions and forms
      * within ApplicationV2

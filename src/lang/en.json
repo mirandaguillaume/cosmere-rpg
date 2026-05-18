@@ -154,6 +154,7 @@
                 }
             },
             "Sheet": {
+                "TitleFormat": "{name} [{type}]",
                 "Header": {
                     "Editable": "Editable",
                     "Locked": "Locked"
@@ -1051,6 +1052,7 @@
                 }
             },
             "Sheet": {
+                "TitleFormat": "{name} [{type}]",
                 "Basics": "Basics",
                 "Tabs": {
                     "Description": "Description",

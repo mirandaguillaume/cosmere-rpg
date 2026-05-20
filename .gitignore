@@ -3,3 +3,7 @@ build/
 
 .vscode/
 .idea/
+
+# Local Docker dev (Foundry VTT) — do not commit credentials
+.env
+tmp-test/

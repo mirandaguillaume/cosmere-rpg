@@ -9,19 +9,22 @@ import {
 import { EventsItemMixin, EventsItemDataSchema } from './mixins/events';
 import {
     RelationshipsMixin,
-    RelationshipsItemDataSchema,
+    RelationshipsItemDataSchema
 } from './mixins/relationships';
 import {
     LinkedSkillsMixin,
     LinkedSkillsItemDataSchema,
 } from './mixins/linked-skills';
 
-export type ConnectionItemDataSchema = DescriptionItemDataSchema &
-    EventsItemDataSchema &
-    LinkedSkillsItemDataSchema &
-    RelationshipsItemDataSchema;
+export type ConnectionItemDataSchema =
+    & DescriptionItemDataSchema
+    & EventsItemDataSchema
+    & LinkedSkillsItemDataSchema
+    & RelationshipsItemDataSchema;
 
-export class ConnectionItemDataModel extends DataModelMixin<ConnectionItemDataSchema>(
+export class ConnectionItemDataModel extends DataModelMixin<
+    ConnectionItemDataSchema
+>(
     DescriptionItemMixin({
         value: 'COSMERE.Item.Type.Connection.desc_placeholder',
     }),

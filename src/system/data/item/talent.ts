@@ -5,11 +5,7 @@ import { EmptyObject } from '@system/types/utils';
 // Mixins
 import { DataModelMixin } from '../mixins';
 import { IdItemMixin, IdItemDataSchema } from './mixins/id';
-import {
-    TypedItemMixin,
-    TypedItemDataSchema,
-    TypedItemDerivedData,
-} from './mixins/typed';
+import { TypedItemMixin, TypedItemDataSchema, TypedItemDerivedData } from './mixins/typed';
 import {
     DescriptionItemMixin,
     DescriptionItemDataSchema,
@@ -50,22 +46,23 @@ const SCHEMA = () => ({
     }),
 });
 
-export type TalentItemDataSchema = ReturnType<typeof SCHEMA> &
-    IdItemDataSchema &
-    TypedItemDataSchema<Talent.Type> &
-    DescriptionItemDataSchema &
-    ActivatableItemDataSchema &
-    DamagingItemDataSchema &
-    ModalityItemDataSchema &
-    EventsItemDataSchema &
-    LinkedSkillsItemDataSchema &
-    RelationshipsItemDataSchema;
+export type TalentItemDataSchema =
+    & ReturnType<typeof SCHEMA>
+    & IdItemDataSchema
+    & TypedItemDataSchema<Talent.Type>
+    & DescriptionItemDataSchema
+    & ActivatableItemDataSchema
+    & DamagingItemDataSchema
+    & ModalityItemDataSchema
+    & EventsItemDataSchema
+    & LinkedSkillsItemDataSchema
+    & RelationshipsItemDataSchema;
 
 export type TalentItemDerivedData = TypedItemDerivedData & {
     hasPath: boolean;
     hasAncestry: boolean;
     hasPower: boolean;
-};
+}
 
 export class TalentItemDataModel extends DataModelMixin<
     TalentItemDataSchema,

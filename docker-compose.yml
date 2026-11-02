@@ -1,0 +1,22 @@
+services:
+  foundry:
+    image: felddy/foundryvtt:13.351
+    container_name: cosmere-foundry
+    hostname: foundry
+    init: true
+    restart: unless-stopped
+    ports:
+      - "30000:30000"
+    environment:
+      FOUNDRY_RELEASE_URL: ${FOUNDRY_RELEASE_URL}
+      FOUNDRY_LICENSE_KEY: ${FOUNDRY_LICENSE_KEY}
+      FOUNDRY_ADMIN_KEY: ${FOUNDRY_ADMIN_KEY:-cosmere-admin}
+      FOUNDRY_MINIFY_STATIC_FILES: "true"
+      FOUNDRY_TELEMETRY: "false"
+    volumes:
+      - foundry-data:/data
+      - ./build:/data/Data/systems/cosmere-rpg:ro
+
+volumes:
+  foundry-data:
+    name: cosmere-foundry-data

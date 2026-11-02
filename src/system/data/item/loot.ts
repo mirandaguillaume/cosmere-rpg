@@ -7,11 +7,7 @@ import {
     DescriptionItemMixin,
     DescriptionItemDataSchema,
 } from './mixins/description';
-import {
-    PhysicalItemMixin,
-    PhysicalItemDataSchema,
-    PhysicalItemDerivedData,
-} from './mixins/physical';
+import { PhysicalItemMixin, PhysicalItemDataSchema, PhysicalItemDerivedData } from './mixins/physical';
 import { EventsItemMixin, EventsItemDataSchema } from './mixins/events';
 import {
     RelationshipsMixin,
@@ -31,12 +27,13 @@ const SCHEMA = () => ({
     }),
 });
 
-export type LootItemDataSchema = ReturnType<typeof SCHEMA> &
-    DescriptionItemDataSchema &
-    PhysicalItemDataSchema &
-    EventsItemDataSchema &
-    LinkedSkillsItemDataSchema &
-    RelationshipsItemDataSchema;
+export type LootItemDataSchema =
+    & ReturnType<typeof SCHEMA>
+    & DescriptionItemDataSchema
+    & PhysicalItemDataSchema
+    & EventsItemDataSchema
+    & LinkedSkillsItemDataSchema
+    & RelationshipsItemDataSchema;
 
 export type LootItemDerivedData = PhysicalItemDerivedData;
 

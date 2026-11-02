@@ -1,0 +1,27 @@
+services:
+  foundry:
+    image: felddy/foundryvtt:13.351
+    container_name: cosmere-foundry-test
+    hostname: foundry
+    init: true
+    ports:
+      - '30000:30000'
+    environment:
+      FOUNDRY_RELEASE_URL: ${FOUNDRY_RELEASE_URL}
+      FOUNDRY_LICENSE_KEY: ${FOUNDRY_LICENSE_KEY}
+      FOUNDRY_ADMIN_KEY: ${FOUNDRY_ADMIN_KEY:-cosmere-admin}
+      FOUNDRY_MINIFY_STATIC_FILES: 'true'
+      FOUNDRY_TELEMETRY: 'false'
+      # Auto-launch the pre-existing cosmere-rpg "test" world so the E2E test
+      # lands straight on the /join screen (no admin/setup automation needed).
+      FOUNDRY_WORLD: 'test'
+    volumes:
+      - cosmere-foundry-data:/data
+      # Mount THIS worktree's build (contains the _canRender fix) over the system,
+      # read-only, so Foundry loads the patched cosmere-rpg.
+      - /home/gumiranda/cosmere-rpg/.claude/worktrees/726-fix/build:/data/Data/systems/cosmere-rpg:ro
+
+volumes:
+  cosmere-foundry-data:
+    external: true
+    name: cosmere-foundry-data
